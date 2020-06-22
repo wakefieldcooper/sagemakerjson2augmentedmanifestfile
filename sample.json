@@ -1,0 +1,23 @@
+{
+    "source-ref":"s3://mwc-ipa/yolov3-dataset/train/000020_12082010_B.jpg",
+    "mwc-yolov3-experiment":{
+      "annotations":[
+        {"class_id":0,"width":600.3116883116883,"top":115.94805194805194,"height":352.83116883116884,"left":89.14285714285714}
+      ],
+      "image_size":[{"width":720.0,"depth":3,"height":576.0}]
+    },
+    "mwc-yolov3-experiment-metadata":{
+      "job-name":"NA",
+      "class-map":{"0":"car"},
+      "human-annotated":"yes",
+      "objects":[
+        {"confidence":0.09},
+        {"confidence":0.09},
+        {"confidence":0.09},
+        {"confidence":0.09}
+      ],
+      "creation-date":"2018-12-13T21:24:33.546706",
+      "type":"groundtruth/object-detection"
+    }
+   }
+   
