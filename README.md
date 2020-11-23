@@ -18,5 +18,5 @@ task: This is the input to main(), it should be a descriptor of the data
 
 To run program
 ```
-python xmltoaugmanigest.py
+python xmltoaugmanifest.py
 ```
