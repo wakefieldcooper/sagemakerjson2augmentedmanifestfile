@@ -16,7 +16,7 @@ def main(task):
     json_filename = 'output.manifest'
 
     #Change this to your s3 bucket where your images will be stored
-    s3_path = 's3://mwc-ipa/deformation/'
+    s3_path = 's3://PATH/TO/YOUR/BUCKET'
     with jsonlines.open(json_filename, 'w') as json_file:
         for xml_file in iglob(os.path.join(
                                            os.path.dirname(__file__),
@@ -69,4 +69,4 @@ def main(task):
         print(categories)
 
 if __name__ == "__main__":
-    main("Full-Dataset-with-AOI")
+    main("DESCRIPTIVE-NAME")
