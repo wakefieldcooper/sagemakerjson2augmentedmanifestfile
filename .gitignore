@@ -1,3 +1,4 @@
-xmls/
 output/
 manifest files/
+*.txt
+*.xml

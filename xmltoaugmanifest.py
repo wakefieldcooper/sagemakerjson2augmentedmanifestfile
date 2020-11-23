@@ -14,8 +14,9 @@ def main(task):
     Path(XML_PATH).mkdir(parents=True, exist_ok=True)
     Path(JSON_PATH).mkdir(parents=True, exist_ok=True)
     json_filename = 'output.manifest'
-    jsons = []
-    s3_path = 's3://mwc-ipa/yolo-v3-experiment/' #Change this to your s3 bucket
+
+    #Change this to your s3 bucket where your images will be stored
+    s3_path = 's3://mwc-ipa/deformation/'
     with jsonlines.open(json_filename, 'w') as json_file:
         for xml_file in iglob(os.path.join(
                                            os.path.dirname(__file__),
@@ -66,8 +67,6 @@ def main(task):
                     })
             json_file.write(json_document)
         print(categories)
-                
-
 
 if __name__ == "__main__":
-    main("mwc-yolov3-experiment")
+    main("Full-Dataset-with-AOI")
